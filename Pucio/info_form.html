@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Floral Info Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://www.transparenttextures.com/patterns/floral-wallpaper.png');
+      background-color: #ffeef2;
+      color: #5c3d2e;
+      padding: 40px;
+    }
+    .form-container {
+      background-color: #fff7fa;
+      border: 2px solid #f7c1c8;
+      border-radius: 20px;
+      padding: 30px;
+      width: 400px;
+      margin: auto;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #d76b82;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      background-color: #f8b6c1;
+      color: white;
+      font-weight: bold;
+      margin-top: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #f191a6;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Janrhick Simple info</h2>
+    <form action="process_info.php" method="post">
+      <label>Full Name:</label>
+      <input type="text" name="fullname" required>
+
+      <label>Birth Year:</label>
+      <input type="text" name="birthyear" required>
+
+      <label>Sleeping Hours per Day:</label>
+      <input type="number" name="sleephours" required>
+
+      <label>City:</label>
+      <select name="city">
+        <option>Manila</option>
+        <option>Cebu</option>
+        <option>Davao</option>
+        <option>Quezon City</option>
+      </select>
+
+      <input type="submit" value="Bloom Info">
+    </form>
+  </div>
+</body>
+</html>
